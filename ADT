@@ -1,0 +1,48 @@
+application of stacks
+
+-string reversal(why? for data security)
+-Evaluation of arithmetic expressions(how? the parenthesis that are used in arithmetic expressions are checked for correctness to determine their matching in terms of number and use.)
+-solution of arithmetic expressions(i.e. reversed polished statements{infix expression(operator is btwn the operand eg a+b), prefix expression(the operator is before the value eg +ab),postfix expression(the operator comes after the operand eg ab-)})
+example transform the following
+
+(a+b)-(c-d) =>infix
+(+ab)-(-cd)  =>prefix
+-(-cd)(+ab)=> +ab--cd
+
+(ab+)-(cd-) =>postfix
+(ab+)(cd-)- =>postfix
+ab+cd-- 
+
+make this a prefix=>(2*3)+(4/2-1*3)
+
+(*23)+(/42)-(*13)
++(*23)(/42)-(*13)
+-[+(*23)(/42)](*13)
+//opening the brackets
+-+*23/42*13 //operators work on the immediate values ie 42*13=ans, 23/ans etc
+
+
+make this a postfix=>(2*3)+(4/2-1*3)
+(23*)+(42/)-(13*)
+[(23*)(42/)+]13*-
+[6 2 +] 3
+
+using stack to evaluate expressions
+
+(2*4)-5+3
+(*24)-(+53)
+-(*24)(+53)
+-*24+53
+
+the stack will look like the following  throught the process
+ the first will have 4 2 then 8 then 3,5,8 then 8,8 then 0
+  thats from the top to bottom of the stack.
+  
+  
+  STACK OPERATIONS
+  -pop() 
+  -push()
+  -isEmpty()
+  -size()
+
+
